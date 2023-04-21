@@ -8,7 +8,7 @@ function upload(){
     console.log("hello")
     let formel = document.querySelector(".form")
     console.log(new FormData(document.querySelector(".form")))
-    fetch("http://localhost:3000/upload", {
+    fetch("http://localhost:3000/posts", {
         method: "POST",
         body: new FormData(formel)
     })
